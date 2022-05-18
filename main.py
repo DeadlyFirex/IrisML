@@ -16,11 +16,4 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-dataset = read_csv('iris.csv', names=names)
-
-
-dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-dataset.hist()
-scatter_matrix(dataset)
-pyplot.savefig('image.pdf', dpi=1200)
-pyplot.show()
+dataset = read_csv('input/iris.csv', names=names)
